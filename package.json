@@ -1,0 +1,25 @@
+{
+  "name": "gd-rawgraphs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8080 -c-1 .",
+    "build": "webpack",
+    "refresh-md": "npx @gooddata/catalog-export --backend tiger"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gooddata/sdk-backend-tiger": "^8.10.0",
+    "@gooddata/sdk-model": "^8.10.0",
+    "@rawgraphs/rawgraphs-charts": "^1.0.0-beta.27",
+    "@rawgraphs/rawgraphs-core": "^1.0.0-beta.17"
+  },
+  "devDependencies": {
+    "@gooddata/catalog-export": "^8.10.0",
+    "http-server": "^14.1.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
